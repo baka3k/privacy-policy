@@ -4,6 +4,9 @@ This repository hosts privacy policies and terms of use for published applicatio
 
 ## Directory of Policies
 
+* **Huyền Cơ Mệnh Lý (Tinix Tu Vi & BaZi):**
+  * HTML: [tuvi.html](tuvi.html)
+  * Markdown: [tuvi.md](tuvi.md)
 * **Mystic Tarot (Huyền Cơ Tarot):**
   * HTML: [tarot.html](tarot.html)
   * Markdown: [tarot.md](tarot.md)
