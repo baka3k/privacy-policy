@@ -14,8 +14,8 @@ This repository hosts privacy policies, terms of use, and customer support pages
 * **Mystic Tarot (Huyền Cơ Tarot):**
   * HTML: [tarot.html](tarot.html)
   * Markdown: [tarot.md](tarot.md)
-* **AWS SAA-C03 Practice:**
-  * HTML: [aws-sa-associated.html](aws-sa-associated.html)
+* **AWS SAA-C03 Exam Prep & Quiz (AWS SAA-C03 Practice):**
+  * Privacy, Terms & Support (HTML): [aws-sa-associated.html](aws-sa-associated.html)
   * Markdown: [aws-sa-associated.md](aws-sa-associated.md)
 * **Scrum Master: PSM Exam Prep:**
   * Privacy & Terms (HTML): [scrum-master.html](scrum-master.html)
