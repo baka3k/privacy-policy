@@ -17,9 +17,10 @@ This repository hosts privacy policies, terms of use, and customer support pages
 * **AWS SAA-C03 Practice:**
   * HTML: [aws-sa-associated.html](aws-sa-associated.html)
   * Markdown: [aws-sa-associated.md](aws-sa-associated.md)
-* **PSM I Exam Prep:**
-  * HTML: [psm1-exam-prep.html](psm1-exam-prep.html)
-  * Markdown: [psm1-exam-prep.md](psm1-exam-prep.md)
+* **Scrum Master: PSM Exam Prep:**
+  * Privacy & Terms (HTML): [scrum-master.html](scrum-master.html)
+  * Alternate HTML: [psm1-exam-prep.html](psm1-exam-prep.html)
+  * Markdown: [psm1-exam-prep.md](psm1-exam-prep.md) / [scrum-master.md](scrum-master.md)
 
 ---
 **Developer:** Baka Team  
