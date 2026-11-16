@@ -1,8 +1,8 @@
 # Privacy Policy & Terms of Service
 
-**Effective Date:** November 1, 2026  
+**Effective Date:** November 16, 2026  
 **Application:** Huyền Cơ Mệnh Lý (Mystic Metaphysics – Tinix Tu Vi & BaZi)  
-**Package Name:** `com.tinix.tuvi.tinix_mobile`  
+**Package Name:** `com.baka3k.tinix` (Android) / `hi.baka3k.tuvi` (iOS)  
 **Developer:** Baka Team  
 **Contact:** [baka3k@gmail.com](mailto:baka3k@gmail.com)
 
@@ -36,10 +36,11 @@ Huyền Cơ Mệnh Lý offers optional subscription tiers (*Basic* and *Pro*) to
 * **No Financial Data Stored by Us:** The developer never receives, accesses, or stores your credit card numbers, billing addresses, or bank account details.
 * **Cryptographic Verification:** When a subscription or purchase is made, the platform issues an anonymous digital transaction token (`purchaseToken` or receipt data). Our backend validates this token directly with the store developer APIs solely to confirm entitlement status and assign your monthly consultation quota.
 
-#### C. Anonymous Technical Identifiers & Rate Limiting
-To ensure fair server resource distribution, enforce monthly plan limits, and protect backend infrastructure against automated abuse:
-* The application generates an anonymous, random installation identifier (`X-Install-Id`) stored on your device.
-* This identifier is strictly technical, contains no personally identifiable information (PII), and cannot be used to identify your real-world identity.
+#### C. Anonymous Device & Technical Identifiers (Device or Other IDs)
+To enforce the **5 lifetime free consultations** allowance (no monthly reset), manage paid monthly plan quotas (*Basic*: 50/month, *Pro*: 300/month), and protect backend infrastructure against automated abuse and fraud:
+* **Hashed Device Identifier (`clientId` / `X-Client-Id`):** On Android, the app derives an **irreversible, one-way SHA-256 cryptographic hash** from `Settings.Secure.ANDROID_ID` combined with an app-specific salt (or generates a Keychain-persisted random identifier on iOS) and transmits it over HTTPS/TLS to our quota and gateway service.
+* **Purpose & Use:** This identifier is used strictly for **App Functionality** (preserving your remaining free consultation count across reinstalls) and **Fraud Prevention, Security, and Compliance** (rate limiting and abuse prevention).
+* **No Sharing & No PII:** This hashed identifier is stored solely on our first-party quota backend, is **never shared with third parties**, is never used for advertising or cross-app tracking, and cannot be reversed to reveal your hardware ID or real-world identity.
 
 #### D. Device Permissions
 The application requests only minimal, necessary system permissions:
@@ -63,7 +64,7 @@ We rely on industry-standard, trusted third-party providers for platform distrib
 ### 1.4 Data Retention & Deletion
 * **Local Data:** Because all saved chart profiles and reading history are stored on your device, you can delete your data at any moment by clearing the application storage in device settings or by uninstalling the app.
 * **Transaction Records:** Anonymous transaction validation records are retained solely for the period required to maintain active subscription validation and comply with legal, tax, and accounting standards.
-* **Assistance & Requests:** You may contact us at [baka3k@gmail.com](mailto:baka3k@gmail.com) at any time with any questions regarding data handling or your subscription status.
+* **Server-Side Quota Records & Deletion Requests:** You may contact us at [baka3k@gmail.com](mailto:baka3k@gmail.com) at any time to request deletion of any server-side quota record associated with your device identifier, or with any questions regarding data handling or your subscription status.
 
 ---
 
@@ -87,7 +88,7 @@ Huyền Cơ Mệnh Lý is not intended for or directed toward children under 13 
 
 | Subscription Tier | Monthly Consultation Limit | Price (USD) | Key Features |
 | :--- | :--- | :--- | :--- |
-| **Free Tier** | 15 consultations / month | **Free ($0.00)** | Unlimited Tử Vi & Bát Tự chart plotting, I Ching divination, Auspicious date selection, local profile management. |
+| **Free Tier** | 5 free consultations (lifetime, no monthly reset) | **Free ($0.00)** | Unlimited Tử Vi & Bát Tự chart plotting, I Ching divination, Auspicious date selection, local profile management. |
 | **Basic Plan** | 50 consultations / month | **$5.99 / month\*** | Expanded consultation quota, in-depth lifetime analysis, marriage compatibility (Hợp Hồn), Hexagram inquiries. |
 | **Pro Plan (Best Value)** | 300 consultations / month | **$11.99 / month\*** | High-volume consultation capacity, priority server processing, high-resolution PDF and image export. |
 
